@@ -11,10 +11,10 @@ function Beat(props) {
             </Grid>
             <Grid container direction="column" item md={10} sm={10} xs={9} justify="space-around" >
                 <Grid item >
-                    <Typography variant="h6" style={{fontFamily:"'Inter', sans-serif", color:"#2276e7"}}>{title}</Typography>
+                    <Typography variant="h6" style={{fontSize:"1.5em",fontFamily:"'Inter', sans-serif", color:"#2276e7"}}>{title}</Typography>
                 </Grid>
                 <Grid item >
-                    <Typography variant="body1" style={{fontFamily:"'Inter', sans-serif", color:"#000c26"}}> {desc}</Typography> 
+                    <Typography variant="body1" style={{fontSize:"1.25em",fontFamily:"'Inter', sans-serif", color:"#000c26"}}> {desc}</Typography> 
                 </Grid>
             </Grid>
         </Grid>
