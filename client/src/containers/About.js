@@ -10,7 +10,6 @@ import FlashOnTwoToneIcon from '@material-ui/icons/FlashOnTwoTone'
 import PeopleAltTwoToneIcon from '@material-ui/icons/PeopleAltTwoTone'
 import TrendingUpIcon from '@material-ui/icons/TrendingUp'
 import Beat from '../components/helper/Beat'
-
 function About() {
     const beats = [
         {
