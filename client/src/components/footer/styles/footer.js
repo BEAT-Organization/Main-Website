@@ -14,6 +14,13 @@ export const Mail = styled.p`
     font-weight: bold;
     color: #387fde;
     margin: 0;
+    &:hover {
+        ${(props) =>
+            !props.disabled
+                ? `color: #387fde;
+                  transition: 200ms ease-in;`
+                : ''}
+    }
 `
 export const Wrapper = styled.div`
     display: flex;
