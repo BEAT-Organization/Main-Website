@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 import {AppBar,Toolbar,Button} from '@material-ui/core'
-import {Link} from 'react-router-dom'
 
 
 //import {StyledAppBar, StyledToolBar, Logo, StyledLink} from './styles/navbar'
@@ -19,6 +18,7 @@ const useStyles = makeStyles(theme => ({
 
     * */
 
+ 
 export const StyledAppBar = styled(AppBar)`
     &&&{
         background-color : #000B26;
@@ -28,22 +28,24 @@ export const StyledAppBar = styled(AppBar)`
         top: 0px;
     }
 `
-export const StyledToolBar = styled(Toolbar)`
+export var StyledToolBar = styled(Toolbar)`
     &&&{
         background-color : #000B26;
-        justify-content: flex-start;
+        justify-content: space-between;
         width: 100vw;
         position: fixed;
         top: 0px;
     }
 `
-export const Logo = styled.img`
+export var Logo = styled.img`
     height: 60px;
     margin-right : 10px;
 `
-export const StyledButton = styled(Button)`
+
+export var StyledButton = styled(Button)`
     &&&{
         margin-right: 20px;
+        width:100%;
         text-decoration: none;
         font-family: 'Inter', sans-serif;
         font-size : 1em;
@@ -52,11 +54,28 @@ export const StyledButton = styled(Button)`
         padding : 4px;
         font-weight : bolder;
         color : #DB2A32;
+        Link.show{
+            display:flex;
+        }
         &:hover{
           color : #28ABE3;
-        } 
+        }
+        @media screen and (max-width: 600px) {
+            display: none; 
     }
-`
-export const StyledLink = styled(Link)`
-    text-decoration: none;
-`
+    `
+export const Styledbutton = styled(Button)`
+    &&&{
+        display:none;
+        border : 0;
+        font-size : 20px;
+        background-color : transparent;
+        padding : 4px;
+        cursor : pointer;
+        color : #DB2A32;
+        @media screen and (max-width: 600px) {
+            display: flex;
+            margin-right:10px;
+    }
+    `
+

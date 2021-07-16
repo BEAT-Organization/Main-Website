@@ -1,4 +1,5 @@
-import {StyledAppBar, StyledToolBar, Logo, StyledButton, StyledLink} from './styles/navbar'
+import {StyledAppBar, StyledToolBar, Logo, StyledButton, Styledbutton} from './styles/navbar'
+import {Link} from 'react-router-dom'
 
 export default function Navbar({children, ...restProps}){
     return <StyledAppBar {...restProps}> {children} </StyledAppBar>
@@ -14,9 +15,14 @@ Navbar.Logo = function NavbarLogo({...restProps}){
 
 Navbar.Link = function NavbarLink({children, ...restProps}){
     return (
-        <StyledLink {...restProps}>
+        <Link {...restProps}>
             <StyledButton> {children} </StyledButton>
-        </StyledLink>
+        </Link>
     )
 }
+Navbar.Button = function Navbarbutton({children, ...restProps}){
+    return <Styledbutton {...restProps}> {children} </Styledbutton>
+}
+
+
 
