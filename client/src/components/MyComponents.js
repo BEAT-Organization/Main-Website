@@ -11,5 +11,5 @@ export {
     Navbar,
     NotFound,
     About,
-    Sponsors
+    Sponsors,
 }
