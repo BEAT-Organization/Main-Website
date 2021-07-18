@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import {Link as RouterLink} from 'react-router-dom'
 
 export const Container = styled.div`
     padding: 5vh 3vw;
@@ -14,12 +15,9 @@ export const Mail = styled.p`
     font-weight: bold;
     color: #387fde;
     margin: 0;
-    &:hover {
-        ${(props) =>
-            !props.disabled
-                ? `color: #387fde;
-                  transition: 200ms ease-in;`
-                : ''}
+    &:hover i {
+        color: #387fde;
+        transition: 200ms ease-in;
     }
 `
 export const Wrapper = styled.div`
@@ -37,21 +35,21 @@ export const Column = styled.div`
     flex-direction: column;
     text-align: ${(props) => (props.social ? 'center' : 'left')};
     justify-content: center;
-    margin:0px 15px;
-    @media(max-width: 650px) {
-    text-align: center;
-    margin-bottom:5vh;
-    align-items: center;
+    margin: 0px 15px;
+    @media (max-width: 650px) {
+        text-align: center;
+        margin-bottom: 5vh;
+        align-items: center;
     }
 `
 
 export const Row = styled.div`
     display: flex;
     flex: 1;
-    @media(max-width: 650px) {
-    flex-direction: column;
-    justify-content: space-bewteen;
-  }
+    @media (max-width: 650px) {
+        flex-direction: column;
+        justify-content: space-bewteen;
+    }
     flex-direction: row;
     justify-content: space-around;
     width: 100%;
@@ -62,23 +60,36 @@ export const Link = styled.a`
     margin-bottom: 20px;
     font-size: 15px;
     text-decoration: none;
-    &:hover {
-        ${(props) =>
-            !props.disabled
-                ? `color: #387fde;
-                  transition: 200ms ease-in;`
-                : ''}
+    &:hover i {
+        color: #387fde;
+        transition: 200ms ease-in;
     }
+    ${(props) =>
+        props.contact
+            ? `
+                display:flex;
+                align-items: center;
+            `
+            : ''}
 `
-export const Contact = styled.p`
+export const LocalLink = styled(RouterLink)`
     color: #fff;
     margin-bottom: 20px;
-    margin-top: 0px;
     font-size: 15px;
-    display:flex;
-    align-items: center;
-`
+    text-decoration: none;
 
+    &:hover i {
+        color: #387fde;
+        transition: 200ms ease-in;
+    }
+    ${(props) =>
+        props.contact
+            ? `
+                display:flex;
+                align-items: center;
+            `
+            : ''}
+`
 export const Title = styled.p`
     font-size: 24px;
     color: #fff;
