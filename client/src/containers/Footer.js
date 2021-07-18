@@ -30,17 +30,17 @@ export function FooterContainer() {
                     </Footer.Column>
 
                     <Footer.Column id="contacts">
-                        <Footer.Contact>
+                        <Footer.LocalLink to="/ContactUs" contact>
                             <Footer.Icon className="fas fa-map-marker-alt" />
                             Faculty of Engineering, Cairo University.
-                        </Footer.Contact>
+                        </Footer.LocalLink>
 
-                        <Footer.Contact>
+                        <Footer.Link contact >
                             <Footer.Icon className="fas fa-phone-alt" />
                             Phone number
-                        </Footer.Contact>
+                        </Footer.Link>
 
-                        <Footer.Link  href="mailto:beat.sbme.official@gmail.com" >
+                        <Footer.Link contact href="mailto:beat.sbme.official@gmail.com" >
                             <Footer.Icon className="far fa-envelope" />
                             <Footer.Mail > beat.sbme.official@gmail.com </Footer.Mail>
                         </Footer.Link>
