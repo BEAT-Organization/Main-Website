@@ -1,5 +1,5 @@
 import React from 'react'
-import Sponsors from '../components/sponsors/indexs'
+import Sponsors from '../components/sponsors/'
 import Logo1 from '../images/semlogo.png'
 import Logo2 from '../images/ieeelogo.png'
 import Logo3 from '../images/emblogo.png'
