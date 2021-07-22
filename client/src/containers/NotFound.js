@@ -1,5 +1,4 @@
 import React from 'react'
-import '../styles/NotFound.css';
 const NotFound = () => {
   return (
     <div id="pg404_background-404">
