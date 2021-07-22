@@ -1,20 +1,18 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import { Home, ContactUs, NotFound } from './components/MyComponents'
-import { FooterContainer } from './containers/Footer'
-import { NavBarContainer } from './containers/Navbar'
-import { MagazineContainer } from './containers/Magazine'
+import { Home, ContactUs, Magazine, NotFound } from './modules'
+import { Navbar, Footer} from './shared'
 
 function App() {
     return (
         <Router>
-            <NavBarContainer />
+            <Navbar/>
             <Switch>
                 <Route exact path="/"> <Home /> </Route>
                 <Route path="/ContactUs"> <ContactUs /> </Route>
-                <Route path="/Magazine"> <MagazineContainer /> </Route>
+                <Route path="/Magazine"> <Magazine/> </Route>
                 <Route path="*"> <NotFound /> </Route>
             </Switch>
-            <FooterContainer />
+            <Footer/>
         </Router>
     )
 }
