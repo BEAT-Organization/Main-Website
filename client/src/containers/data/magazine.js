@@ -23,7 +23,10 @@ const features = [
 
 const title = "BEAT Magazine"
 
-const description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+const description = {
+    a: " Follow the latest updates in biomedical engineering with",
+    b: "BEAT Magazine."
+}
 
 export const magazine = {
   title,features,description
