@@ -1,0 +1,7 @@
+export {default as ImportContactsTwoToneIcon} from '@material-ui/icons/ImportContactsTwoTone'
+export {default as EqualizerTwoToneIcon } from '@material-ui/icons/EqualizerTwoTone'
+export {default as SchoolTwoToneIcon } from '@material-ui/icons/SchoolTwoTone'
+export {default as BusinessTwoToneIcon } from '@material-ui/icons/BusinessTwoTone'
+export {default as FlashOnTwoToneIcon } from '@material-ui/icons/FlashOnTwoTone'
+export {default as PeopleAltTwoToneIcon } from '@material-ui/icons/PeopleAltTwoTone'
+export {default as TrendingUpIcon } from '@material-ui/icons/TrendingUp'

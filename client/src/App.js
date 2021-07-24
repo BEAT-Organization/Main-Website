@@ -1,6 +1,5 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import { Home, ContactUs, Magazine, NotFound } from './modules'
-import { Navbar, Footer} from './shared'
+import { Home, ContactUs, Magazine, NotFound, Navbar, Footer } from './modules'
 
 function App() {
     return (
