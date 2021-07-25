@@ -1,17 +1,19 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import { Home, ContactUs, Magazine, NotFound, Navbar, Footer } from './modules'
+//import { Home, ContactUs, Magazine, NotFound, Navbar, Footer } from './modules'
+import {Home} from './modules'
 
 function App() {
     return (
         <Router>
-            <Navbar/>
+            {/*<Navbar/>*/}
             <Switch>
-                <Route exact path="/"> <Home /> </Route>
+                <Route exact path="/"> <Home /> </Route>{/*
                 <Route path="/ContactUs"> <ContactUs /> </Route>
                 <Route path="/Magazine"> <Magazine/> </Route>
                 <Route path="*"> <NotFound /> </Route>
+                */}
             </Switch>
-            <Footer/>
+            {/*<Footer/>*/}
         </Router>
     )
 }
