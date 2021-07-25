@@ -1,15 +1,9 @@
 import styled from 'styled-components'
-import {ContainerGrid, BeatsContainer} from './styles';
+import {containerItemGrid, ItemGrid} from 'shared'
 
-const containerItemGrid = styled(Grid).attrs({
-    container: true,
-    item: true,
-})``
-
-
-export const ContainerGrid = styled(containerItemGrid).attrs({ md: 6, xs: 12 })`
+export const BeatsContainerGrid = styled(containerItemGrid).attrs({ md: 6, xs: 12 })`
     && {
-        flex-direction: column;
+        flex-direction: row;
         padding: 15px;
     }
 `
@@ -19,10 +13,11 @@ export const BeatsContainer = styled(containerItemGrid).attrs({ md: 12, xs: 12 }
     }
 `
 export const Title = styled.h1`
-    color: #fc414a;
     margin-top: 0px;
     color: #2276e7;
     text-align: center;
     font-size: 1.8em;
+    margin-bottom: 7vh;
 `
+export const TitleContainer = styled(ItemGrid).attrs({md:12, sm:12, xs:12})` `
 

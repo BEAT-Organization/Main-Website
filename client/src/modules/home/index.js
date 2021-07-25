@@ -1,12 +1,13 @@
 import React from 'react'
-import {About, Sponsors, Cover} from "./parts"
+//import {About, Sponsors, Cover} from "./parts"
+import {About} from "./parts"
 
 export default function Home() {
     return (
         <section>
-            <Cover/>
+            {/*<Cover/>*/}
             <About/>
-            <Sponsors/>
+            {/*<Sponsors/>*/}
         </section>
     )
 }

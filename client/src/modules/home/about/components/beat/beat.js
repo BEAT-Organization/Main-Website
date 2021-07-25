@@ -21,7 +21,7 @@ Beat.Icon = function BeatIcon({ icon, ...restProps }) {
     return (
         <IconContainer {...restProps}>
             <IconButton>
-                <Icon fontSize="large" style={{ color: '#2276e7' }}></Icon>
+                <Icon style={{fontSize: '2.65rem', color: '#2276e7' }}></Icon>
             </IconButton>
         </IconContainer>
     )

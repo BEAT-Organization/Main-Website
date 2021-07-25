@@ -23,10 +23,10 @@ export const IconContainer = styled(containerItemGrid).attrs({ md: 1, sm: 2, xs:
 
 export const IconButton = styled(Button)`
     && {
-       max-width: 50px;
-       min-width: 50px;
-       max-height: 50px;
-       min-height: 50px;
+       max-width: 60px;
+       min-width: 60px;
+       max-height: 60px;
+       min-height: 60px;
        background: #000c26;
     }
 `
@@ -45,6 +45,8 @@ export const BeatTitle = styled.h6`
         font-size: 1.5em;
         font-family: 'Inter', sans-serif;
         color: #2276e7;
+        margin: 0px;
+        font-weight: 450;
     }
 `
 
