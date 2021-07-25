@@ -1,16 +1,16 @@
 import React from 'react'
 import Sponsors from './sponsors'
-import {logos} from './images/logos'
+import {emb, siemens, megatronic, ieee, nekh} from '../images'
 
 export default function SponsorsContainer() {
     return (
         <Sponsors>
             <Sponsors.Title>Previous Sponsors</Sponsors.Title>
-            <Sponsors.Logo src={logos.siemens} alt="logo" />
-            <Sponsors.Logo src={logos.megatronic} alt="logo" />
-            <Sponsors.Logo src={logos.emb} alt="logo" />
-            <Sponsors.Logo src={logos.ieee} alt="logo" />
-            <Sponsors.Logo src={logos.nekh} alt="logo" />
+            <Sponsors.Logo src={siemens} alt="logo" />
+            <Sponsors.Logo src={megatronic} alt="logo" />
+            <Sponsors.Logo src={emb} alt="logo" />
+            <Sponsors.Logo src={ieee} alt="logo" />
+            <Sponsors.Logo src={nekh} alt="logo" />
         </Sponsors>
     )
 }

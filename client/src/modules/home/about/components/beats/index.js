@@ -1,28 +1,27 @@
 import React from 'react' ;
 import Beat from '../beat';
-import beats from '../../constants';
-import {ContainerGrid, BeatsContainer, Title} from './styles';
+import {BeatsContainerGrid, BeatsContainer, Title, TitleContainer} from './styles';
 
 export default function Beats({ children, ...restProps }) {
     return (
-        <ContainerGrid {...restProps}>{children}</ContainerGrid>
+        <BeatsContainerGrid {...restProps}>{children}</BeatsContainerGrid>
     )
 }
 
 Beats.Title = function BeatsTitle({...restProps }) {
-    return <Title {...restProps} >OUR BEATS</Title>
+    return (
+        <TitleContainer>
+            <Title {...restProps} >OUR BEATS</Title>
+        </TitleContainer>
+    )
 }
 
-Beats.All = function AllBeats({ children, title, desc, ...restProps }) {
+Beats.All = function AllBeats({ beats, ...restProps }) {
     return (
         <BeatsContainer {...restProps}>
             {beats.map((beat) => {
                 return (
-                    <Beat
-                        icon={beat.icon}
-                        title={beat.title}
-                        desc={beat.desc}
-                    />
+                    <Beat icon={beat.icon} title={beat.title} desc={beat.desc} />
                 )
             })}
         </BeatsContainer>
