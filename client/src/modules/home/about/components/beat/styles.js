@@ -8,7 +8,7 @@ const containerItemGrid = styled(Grid).attrs({
 
 export const ContainerGrid = styled(containerItemGrid)`
     && {
-        justify-content: space-between;
+        justify-content: space-around;
         align-content: center;
         margin-bottom: 20px;
     }
