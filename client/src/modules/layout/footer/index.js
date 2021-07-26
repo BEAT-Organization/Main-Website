@@ -1,38 +1,53 @@
-import React from 'react';
-import { Container, Wrapper, Row, Column, Link, LocalLink, Title, Icon, Mail} from './styles/footer';
+import React from 'react'
+import Footer from './footer'
+export default function FooterContainer() {
+    return (
+        <Footer>
+            <Footer.Wrapper>
+                <Footer.Row>
 
-export default function Footer({ children, ...restProps }) {
-  return <Container {...restProps}>{children}</Container>;
+                    <Footer.Column social>
+                        <Footer.Title>About Beat</Footer.Title>
+                        <Footer.Link href="/home">
+                            Biomedical Engineering Awareness and Technologies
+                            (BEAT)
+                        </Footer.Link>
+
+                        <div className="icons">
+                            <Footer.Link href="https://www.facebook.com/beat.bme">
+                                <Footer.Icon social className="fab fa-facebook-square" />
+                            </Footer.Link>
+                            <Footer.Link href="https://www.linkedin.com/company/beat-sbme">
+                                <Footer.Icon social className="fab fa-linkedin" />
+                            </Footer.Link>
+                            <Footer.Link href="https://github.com/BEAT-Organization">
+                                <Footer.Icon social className="fab fa-github-square" />
+                            </Footer.Link>
+                            <Footer.Link href="#">
+                                <Footer.Icon social className="fab fa-youtube-square" />
+                            </Footer.Link>
+                        </div>
+                    </Footer.Column>
+
+                    <Footer.Column id="contacts">
+                        <Footer.LocalLink to="/ContactUs" contact>
+                            <Footer.Icon className="fas fa-map-marker-alt" />
+                            Faculty of Engineering, Cairo University.
+                        </Footer.LocalLink>
+
+                        <Footer.Link contact >
+                            <Footer.Icon className="fas fa-phone-alt" />
+                            Phone number
+                        </Footer.Link>
+
+                        <Footer.Link contact href="mailto:beat.sbme.official@gmail.com" >
+                            <Footer.Icon className="far fa-envelope" />
+                            <Footer.Mail > beat.sbme.official@gmail.com </Footer.Mail>
+                        </Footer.Link>
+                    </Footer.Column>
+
+                </Footer.Row>
+            </Footer.Wrapper>
+        </Footer>
+    )
 }
-
-Footer.Wrapper = function FooterWrapper({children, ...restProps}) {
-  return <Wrapper {...restProps}>{children}</Wrapper>
-}
-
-Footer.Row = function FooterRow({ children, ...restProps }) {
-  return <Row {...restProps}>{children}</Row>;
-};
-
-Footer.Column = function FooterColumn({ children, ...restProps }) {
-  return <Column {...restProps}>{children}</Column>;
-};
-
-Footer.Link = function FooterLink({ children, ...restProps }) {
-  return <Link {...restProps}>{children}</Link>;
-};
-Footer.LocalLink = function FooterLocalLink({ children, ...restProps }) {
-  return <LocalLink {...restProps}>{children}</LocalLink>;
-};
-
-Footer.Title = function FooterTitle({ children, ...restProps }) {
-  return <Title {...restProps}>{children}</Title>;
-};
-
-Footer.Icon = function FooterIcon({ children, ...restProps }) {
-  return <Icon {...restProps}>{children}</Icon>;
-};
-
-Footer.Mail = function FooterMail({ children, ...restProps }) {
-  return <Mail {...restProps}>{children}</Mail>;
-};
-
