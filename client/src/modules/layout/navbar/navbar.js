@@ -1,4 +1,4 @@
-import {StyledAppBar, StyledToolBar, Logo, StyledButton, StyledLink} from './styles/navbar'
+import {StyledAppBar, StyledToolBar, Logo, StyledButton, StyledLink} from './styles'
 
 export default function Navbar({children, ...restProps}){
     return <StyledAppBar {...restProps}> {children} </StyledAppBar>
