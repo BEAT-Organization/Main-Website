@@ -14,7 +14,7 @@ Mission.Title = function MissionTitle({...restProps}){
    )
 }
 
-Mission.Img = function MissionImg({children, ...restProps}){
+Mission.Img = function MissionImg({...restProps}){
    return(
       <Img {...restProps}/>
    )

@@ -1,7 +1,7 @@
-import {containerGrid, containerItemGrid} from 'shared'
+import {containerGrid, containerItemGrid, containerItem} from 'shared'
 import styled from "styled-components";
 
-export const Container = styled(containerGrid).attrs({container: false, item: true})`
+export const Container = styled(containerItem)`
    && {
       text-align: center;
       align-items: center;
