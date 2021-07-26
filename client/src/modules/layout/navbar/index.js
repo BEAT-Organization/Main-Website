@@ -1,22 +1,17 @@
-import {StyledAppBar, StyledToolBar, Logo, StyledButton, StyledLink} from './styles/navbar'
+import React from 'react'
+import Navbar from './navbar'
+import logo from '../images/logo.png'
 
-export default function Navbar({children, ...restProps}){
-    return <StyledAppBar {...restProps}> {children} </StyledAppBar>
-}
-
-Navbar.Toolbar = function NavbarToolbar({children, ...restProps}){
-    return <StyledToolBar {...restProps}> {children} </StyledToolBar>
-}
-
-Navbar.Logo = function NavbarLogo({...restProps}){
-    return <Logo {...restProps}/>
-}
-
-Navbar.Link = function NavbarLink({children, ...restProps}){
+export default function NavBarContainer(){
     return (
-        <StyledLink {...restProps}>
-            <StyledButton> {children} </StyledButton>
-        </StyledLink>
+        <Navbar>
+            <Navbar.Toolbar>
+                <Navbar.Logo src={logo} alt="logo"/>
+                <Navbar.Link to='/'>Home</Navbar.Link>
+                <Navbar.Link to='/ContactUs'>ContactUs</Navbar.Link>
+                <Navbar.Link to='/Articles'>Articles</Navbar.Link>
+                <Navbar.Link to='/Magazine'>Magazine</Navbar.Link>
+            </Navbar.Toolbar>
+        </Navbar>
     )
 }
-

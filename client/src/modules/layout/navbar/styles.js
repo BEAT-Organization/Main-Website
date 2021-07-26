@@ -2,23 +2,6 @@ import styled from 'styled-components'
 import {AppBar,Toolbar,Button} from '@material-ui/core'
 import {Link} from 'react-router-dom'
 
-
-//import {StyledAppBar, StyledToolBar, Logo, StyledLink} from './styles/navbar'
-/*
-    *
-    import {AppBar,Toolbar,Button} from '@material-ui/core'
-import { makeStyles } from "@material-ui/core/styles";
-import {Link} from 'react-router-dom'
-import logo from '../images/logo.png'
-
-import React from 'react'
-import Navbar from '../components/navbar'
-
-const useStyles = makeStyles(theme => ({
-
-
-    * */
-
 export const StyledAppBar = styled(AppBar)`
     &&&{
         background-color : #000B26;
@@ -28,6 +11,7 @@ export const StyledAppBar = styled(AppBar)`
         top: 0px;
     }
 `
+
 export const StyledToolBar = styled(Toolbar)`
     &&&{
         background-color : #000B26;
@@ -37,10 +21,12 @@ export const StyledToolBar = styled(Toolbar)`
         top: 0px;
     }
 `
+
 export const Logo = styled.img`
     height: 60px;
     margin-right : 10px;
 `
+
 export const StyledButton = styled(Button)`
     &&&{
         margin-right: 20px;
@@ -57,6 +43,7 @@ export const StyledButton = styled(Button)`
         } 
     }
 `
+
 export const StyledLink = styled(Link)`
     text-decoration: none;
 `
