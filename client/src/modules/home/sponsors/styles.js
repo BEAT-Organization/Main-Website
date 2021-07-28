@@ -1,21 +1,20 @@
 import styled from 'styled-components'
 
+const LOGO_HEIGHT = 72
+
 export const Container = styled.div`
     padding: 5vh 3vw;
     background: #fff;
 `
 export const Logo = styled.img`
-height: 50px;
-width:150px;
-margin-right : 30px;
-margin-left : 30px;
-@media(max-width: 650px) {
-    display:block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom:20px;
-    width: 50%;
-}
+    height: ${LOGO_HEIGHT}px;
+    width: ${(props) => (props.width * LOGO_HEIGHT)}px;
+    @media(max-width: 650px) {
+        display:block;
+        margin-bottom:20px;
+        height: ${LOGO_HEIGHT/1.3}px;
+        width: ${(props) => (props.width * LOGO_HEIGHT/1.3)}px;
+    }
 `
 export const Title = styled.p`
    
